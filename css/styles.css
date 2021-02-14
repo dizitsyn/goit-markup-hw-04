@@ -201,8 +201,14 @@ strong {
 
 /* меняем цвет кнопок фильтра */
 .filter .filter-button:hover,
-.filter .filter-button:focus,
+.filter .filter-button:focus {
+  outline: none;
+  color: var(--second-accent-color);
+  background-color: var(--accent-color);
+}
 .hero .button {
+  max-width: 250px;
+  max-height: 50px;
   outline: none;
   color: var(--second-accent-color);
   background-color: var(--accent-color);
@@ -237,7 +243,10 @@ strong {
 /* Меняем шрифт героя */
 
 .hero {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   max-width: 1600px;
   height: 600px;
