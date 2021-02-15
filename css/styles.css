@@ -587,16 +587,17 @@ strong {
 
 .project-item .item-link:focus {
   outline: none;
-}
-
-/* Не могу понять почему не рпботает  */
-
-/* .project-item .item-link:focus .project-item {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-} */
+}
+.project-item .item-link {
+  display: block;
+}
 
-.project-item .item-link:focus .company-filter {
+.item-link:focus .project-item {
+}
+
+.project-item .item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
